@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather forecast</title>
+</head>
+<body> 
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name">
+            <button class="btn"><i><img class="searchbtn" src="./snaps/search.png" alt=""></i></button>
+        </div>
+        <div class="error">
+            <p>City Not Found</p>
+        </div>
+        <div class="weather">
+            <img class="default-icon" src="./snaps/sun.png" alt="weather"> 
+            <h1 class="celcius">0°C</h1>
+            <h2 class="city">City</h2>
+            <div class="detail">
+                <div class="col">
+                    <img src="./snaps/humidity.png" alt="">
+                    <div class="Humidity">
+                        <p class="HumidityP">0%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./snaps/wind.png" alt="">
+                    <div class="Wind">
+                        <p class="WindS">0k/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <!-- Forecast data will be dynamically added here -->
+                    <div class="forecast-data"></div>
+                </div>
+
+            </div>        
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
